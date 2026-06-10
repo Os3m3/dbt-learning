@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: dbt_postgres
+    environment:
+      POSTGRES_USER: dbt
+      POSTGRES_PASSWORD: dbt
+      POSTGRES_DB: dbt_learning
+    ports:
+      - "5432:5432"
+    volumes:
+      - dbt_pgdata:/var/lib/postgresql/data
+
+volumes:
+  dbt_pgdata:
