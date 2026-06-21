@@ -1,0 +1,14 @@
+sources:
+  - name: raw_source
+    description: "The raw tables in the database"
+    database: database
+    schema: public  
+    tables:
+      - name: raw_sales
+        description: 'This table contains uncleand data for sales'
+
+      - name: customers
+        description: 'This table contains uncleand data for customers'
+
+      - name: shop_regions
+        description: 'This table contains uncleand data for shop regions'
